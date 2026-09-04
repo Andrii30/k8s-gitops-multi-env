@@ -20,5 +20,5 @@ Application — dev and prod are untouched until you edit their files too.
 ## Verify
 ```bash
 argocd app list
-kubectl get pods -n gitea-dev -n gitea-staging -n gitea-prod
+for ns in gitea-dev gitea-staging gitea-prod; do kubectl get pods -n "$ns"; done
 ```

@@ -10,6 +10,7 @@ spec:
           - env: dev
           - env: staging
           - env: prod
+          - env: qa
   template:
     metadata:
       name: 'gitea-{{env}}'

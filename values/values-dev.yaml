@@ -7,7 +7,7 @@ gitea:
     database:
       DB_TYPE: sqlite3
     log:
-      LEVEL: debug
+      LEVEL: info
 persistence:
   enabled: false
 postgresql:
